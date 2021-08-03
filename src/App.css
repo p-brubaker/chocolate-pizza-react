@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+header, #article-head {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#article-head {
+    margin-top: 45px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+#header-left {
+    display: flex;
+    flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#fork-knife-logo {
+    align-self: flex-end;
+}
+
+#header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+}
+
+[alt="rss icon"] {
+    margin-left: 7px;
+}
+
+ul * {
+    margin-left: 1px;
+}
+
+.dial-line {
+    background-image: url("./assets/hr-img.png");
+    background-repeat: repeat;
+    height: 10px;
+    margin-top: 10px;
+}
+
+#main-top-left {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-top-right {
+    display: flex;
+    align-items: flex-end;
+}
+
+p {
+    margin-top: 10px;
+    text-indent: 2em;
+    margin-bottom: 25px;
+}
+body {
+    width: 80%;
+    max-width:800px;
+    margin:auto;
+}
+
+
+#ingredients {
+    font-family: 'Architects Daughter', cursive;
+    background-image: url('./assets/list-bg.png');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ingredient-list {
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    max-width: 250px;
+    color: rgb(53, 40, 24)
+}
+
+.ingredient-list * {
+    margin-bottom: 3px;
+}
+
+#author-bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#span-container {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    position: relative;
+    z-index: 1;
+    top:70%
+}
+
+#fork-knife-logo-footer {
+    position: relative;
+    z-index: 2;
+    border: solid 10px white;
+    left: 50%;
+    margin-left: -25px;
+}
+
+#fork-knife-line {
+    height: 60px;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: rgba(76, 9, 9, 0.724);
+    color: white;
+}
+
+#delicious {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-delicious {
+    font-family: 'Norican';
+    font-size: 2rem;
+    margin-bottom: -10px;
+}
+
+#header-text {
+    margin-left: 5px;
+}
+
+.light-mono {
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    color: grey;
+}
+
+#printer-icon {
+    margin-bottom: 2px;
+}
+
+h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.body-text {
+    color: rgb(73, 72, 72);
+}
+
+#span-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#share-recipe {
+    height: 40px;
+    align-self: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    opacity: 50%;
+}
+
+input:checked + label {
+    text-decoration: line-through;
 }
